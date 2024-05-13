@@ -1,8 +1,8 @@
-# j-util
-工具类
+# @fefeding/eventemitter
+工事件辅助类
 
 ```bash
-npm i j-eventemitter
+npm i @fefeding/eventemitter
 ```
 
 # API

@@ -1,5 +1,5 @@
 {
-  "name": "j-eventemitter",
+  "name": "@fefeding/eventemitter",
   "version": "1.0.1",
   "description": "事件 emit",
   "main": "./dist/index.js",
@@ -7,6 +7,10 @@
   "files": [
     "dist/"
   ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
   "scripts": {
     "dev": "node test/dev",
     "build": "gulp && node ./build/build.js && npm run docs:build",
