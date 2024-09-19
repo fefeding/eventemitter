@@ -8,5 +8,6 @@
 
 |  Package | Description |
 |  --- | --- |
+|  [@fefeding/eventemitter](./eventemitter.md) |  |
 |  [j-eventemitter](./j-eventemitter.md) |  |
 

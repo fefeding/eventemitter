@@ -52,4 +52,24 @@ export default class JEventEmitter extends EventEmiter {
         }
         return this;
     }
+
+    // 事件订阅集合
+    private static emitters = new Map<string, JEventEmitter>();
+    // 获取或生成订阅器
+    static getEmitter(key: string) {
+        let emmiter = this.emitters.get(key);
+        if(!emmiter) {
+            emmiter = new JEventEmitter();
+            this.emitters.set(key, emmiter);
+        }
+        return emmiter;
+    }
+
+    // 释放
+    static removeEmitter(key: string) {
+        if(this.emitters.has(key)) {
+            return this.emitters.delete(key);
+        }
+        return false;
+    }
 } 

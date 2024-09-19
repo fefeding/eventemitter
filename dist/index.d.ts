@@ -28,4 +28,7 @@ export default class JEventEmitter extends EventEmiter {
      * @returns 返回 EventEmitter 实例
      */
     off<T extends string | symbol | Array<string>>(event: T, fn?: (...args: any[]) => void, context?: any, once?: boolean): this;
+    private static emitters;
+    static getEmitter(key: string): JEventEmitter;
+    static removeEmitter(key: string): boolean;
 }

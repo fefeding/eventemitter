@@ -394,6 +394,24 @@ class JEventEmitter extends EventEmitter {
         }
         return this;
     }
+    // 事件订阅集合
+    static emitters = new Map();
+    // 获取或生成订阅器
+    static getEmitter(key) {
+        let emmiter = this.emitters.get(key);
+        if (!emmiter) {
+            emmiter = new JEventEmitter();
+            this.emitters.set(key, emmiter);
+        }
+        return emmiter;
+    }
+    // 释放
+    static removeEmitter(key) {
+        if (this.emitters.has(key)) {
+            return this.emitters.delete(key);
+        }
+        return false;
+    }
 }
 
 export { JEventEmitter as default };
