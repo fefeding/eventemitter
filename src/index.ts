@@ -53,6 +53,13 @@ export default class JEventEmitter extends EventEmiter {
         return this;
     }
 
+    /**
+     * 消毁
+     */
+    destory() {
+        this.removeAllListeners();
+    }
+
     // 事件订阅集合
     private static emitters = new Map<string, JEventEmitter>();
     // 获取或生成订阅器
@@ -68,6 +75,8 @@ export default class JEventEmitter extends EventEmiter {
     // 释放
     static removeEmitter(key: string) {
         if(this.emitters.has(key)) {
+            const emitter = this.getEmitter(key);
+            emitter && emitter.destory();
             return this.emitters.delete(key);
         }
         return false;

@@ -394,6 +394,12 @@ class JEventEmitter extends EventEmitter {
         }
         return this;
     }
+    /**
+     * 消毁
+     */
+    destory() {
+        this.removeAllListeners();
+    }
     // 事件订阅集合
     static emitters = new Map();
     // 获取或生成订阅器
@@ -408,6 +414,8 @@ class JEventEmitter extends EventEmitter {
     // 释放
     static removeEmitter(key) {
         if (this.emitters.has(key)) {
+            const emitter = this.getEmitter(key);
+            emitter && emitter.destory();
             return this.emitters.delete(key);
         }
         return false;

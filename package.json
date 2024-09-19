@@ -1,6 +1,6 @@
 {
   "name": "@fefeding/eventemitter",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "事件 emit",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",

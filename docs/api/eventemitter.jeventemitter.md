@@ -17,6 +17,7 @@ export default class JEventEmitter extends EventEmiter
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
+|  [destory()](./eventemitter.jeventemitter.destory.md) |  | 消毁 |
 |  [getEmitter(key)](./eventemitter.jeventemitter.getemitter.md) | <code>static</code> |  |
 |  [off(event, fn, context, once)](./eventemitter.jeventemitter.off.md) |  | 移除给定的事件的一个监听器 |
 |  [on(event, fn, context)](./eventemitter.jeventemitter.on.md) |  | 为给定的事件添加一个监听器 |
