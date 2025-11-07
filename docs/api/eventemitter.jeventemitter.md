@@ -13,13 +13,137 @@ export default class JEventEmitter extends EventEmiter
 ```
 **Extends:** EventEmiter
 
+## Properties
+
+`<table>``<thead>``<tr>``<th>`
+
+Property
+
+
+</th>`<th>`
+
+Modifiers
+
+
+</th>`<th>`
+
+Type
+
+
+</th>`<th>`
+
+Description
+
+
+</th></tr></thead>
+`<tbody>``<tr>``<td>`
+
+[key](./eventemitter.jeventemitter.key.md)
+
+
+</td>`<td>`
+
+
+</td>`<td>`
+
+string
+
+
+</td>`<td>`
+
+唯一标识
+
+
+</td></tr>
+</tbody></table>
+
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [destory()](./eventemitter.jeventemitter.destory.md) |  | 消毁 |
-|  [getEmitter(key)](./eventemitter.jeventemitter.getemitter.md) | <code>static</code> |  |
-|  [off(event, fn, context, once)](./eventemitter.jeventemitter.off.md) |  | 移除给定的事件的一个监听器 |
-|  [on(event, fn, context)](./eventemitter.jeventemitter.on.md) |  | 为给定的事件添加一个监听器 |
-|  [removeEmitter(key)](./eventemitter.jeventemitter.removeemitter.md) | <code>static</code> |  |
+`<table>``<thead>``<tr>``<th>`
+
+Method
+
+
+</th>`<th>`
+
+Modifiers
+
+
+</th>`<th>`
+
+Description
+
+
+</th></tr></thead>
+`<tbody>``<tr>``<td>`
+
+[destory()](./eventemitter.jeventemitter.destory.md)
+
+
+</td>`<td>`
+
+
+</td>`<td>`
+
+消毁
+
+
+</td></tr>
+`<tr>``<td>`
+
+[getEmitter(key)](./eventemitter.jeventemitter.getemitter.md)
+
+
+</td>`<td>`
+
+`static`
+
+
+</td>`<td>`
+
+
+</td></tr>
+`<tr>``<td>`
+
+[off(event, fn, context, once)](./eventemitter.jeventemitter.off.md)
+
+
+</td>`<td>`
+
+
+</td>`<td>`
+
+移除给定的事件的一个监听器
+
+
+</td></tr>
+`<tr>``<td>`
+
+[on(event, fn, context)](./eventemitter.jeventemitter.on.md)
+
+
+</td>`<td>`
+
+
+</td>`<td>`
+
+为给定的事件添加一个监听器
+
+
+</td></tr>
+`<tr>``<td>`
+
+[removeEmitter(key)](./eventemitter.jeventemitter.removeemitter.md)
+
+
+</td>`<td>`
+
+`static`
+
+
+</td>`<td>`
+
+
+</td></tr>
+</tbody></table>
 

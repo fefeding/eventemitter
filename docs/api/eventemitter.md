@@ -6,7 +6,27 @@
 
 ## Classes
 
-|  Class | Description |
-|  --- | --- |
-|  [JEventEmitter](./eventemitter.jeventemitter.md) | EventEmitter 类，继承自 'eventemitter3' 模块的 EventEmiter 类。 用于进行事件的发布与订阅。 |
+`<table>``<thead>``<tr>``<th>`
+
+Class
+
+
+</th>`<th>`
+
+Description
+
+
+</th></tr></thead>
+`<tbody>``<tr>``<td>`
+
+[JEventEmitter](./eventemitter.jeventemitter.md)
+
+
+</td>`<td>`
+
+EventEmitter 类，继承自 'eventemitter3' 模块的 EventEmiter 类。 用于进行事件的发布与订阅。
+
+
+</td></tr>
+</tbody></table>
 

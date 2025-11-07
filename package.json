@@ -1,6 +1,6 @@
 {
   "name": "@fefeding/eventemitter",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "事件 emit",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -13,7 +13,7 @@
   },
   "scripts": {
     "dev": "node test/dev",
-    "build": "gulp && node ./build/build.js && npm run docs:build",
+    "build": "gulp && node ./build/build.js",
     "test": "vitest",
     "update": "npx taze major  -w",
     "release": "npx bumpp --commit --tag --push",

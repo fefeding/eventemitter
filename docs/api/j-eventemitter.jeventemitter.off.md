@@ -14,12 +14,87 @@ off<T extends string | symbol | Array`<string>`>(event: T, fn?: (...args: any[])
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  event | T | 事件名，可以是字符串、符号或字符串数组 |
-|  fn | (...args: any\[\]) =&gt; void | _(Optional)_ 可选，监听函数，参数列表为可变参数 |
-|  context | any | _(Optional)_ 可选，上下文对象 |
-|  once | boolean | _(Optional)_ 可选，是否只执行一次 |
+`<table>``<thead>``<tr>``<th>`
+
+Parameter
+
+
+</th>`<th>`
+
+Type
+
+
+</th>`<th>`
+
+Description
+
+
+</th></tr></thead>
+`<tbody>``<tr>``<td>`
+
+event
+
+
+</td>`<td>`
+
+T
+
+
+</td>`<td>`
+
+事件名，可以是字符串、符号或字符串数组
+
+
+</td></tr>
+`<tr>``<td>`
+
+fn
+
+
+</td>`<td>`
+
+(...args: any\[\]) =&gt; void
+
+
+</td>`<td>`
+
+_(Optional)_ 可选，监听函数，参数列表为可变参数
+
+
+</td></tr>
+`<tr>``<td>`
+
+context
+
+
+</td>`<td>`
+
+any
+
+
+</td>`<td>`
+
+_(Optional)_ 可选，上下文对象
+
+
+</td></tr>
+`<tr>``<td>`
+
+once
+
+
+</td>`<td>`
+
+boolean
+
+
+</td>`<td>`
+
+_(Optional)_ 可选，是否只执行一次
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

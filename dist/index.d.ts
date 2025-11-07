@@ -6,6 +6,10 @@ import EventEmiter from 'eventemitter3';
  */
 export default class JEventEmitter extends EventEmiter {
     /**
+     * 唯一标识
+     */
+    key: string;
+    /**
      * 私有方法，用于规范化事件名
      * @param name - 可以是字符串、符号或字符串数组
      * @returns 返回符号或字符串数组

@@ -6,8 +6,34 @@
 
 ## Packages
 
-|  Package | Description |
-|  --- | --- |
-|  [@fefeding/eventemitter](./eventemitter.md) |  |
-|  [j-eventemitter](./j-eventemitter.md) |  |
+`<table>``<thead>``<tr>``<th>`
+
+Package
+
+
+</th>`<th>`
+
+Description
+
+
+</th></tr></thead>
+`<tbody>``<tr>``<td>`
+
+[@fefeding/eventemitter](./eventemitter.md)
+
+
+</td>`<td>`
+
+
+</td></tr>
+`<tr>``<td>`
+
+[j-eventemitter](./j-eventemitter.md)
+
+
+</td>`<td>`
+
+
+</td></tr>
+</tbody></table>
 

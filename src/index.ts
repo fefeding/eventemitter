@@ -6,6 +6,10 @@ import EventEmiter from 'eventemitter3';
  * @public
  */
 export default class JEventEmitter extends EventEmiter {
+    /**
+     * 唯一标识
+     */
+    key: string = '';
     
     /**
      * 私有方法，用于规范化事件名
@@ -58,6 +62,7 @@ export default class JEventEmitter extends EventEmiter {
      */
     destory() {
         this.removeAllListeners();
+        if(this.key) JEventEmitter.removeEmitter(this.key);
     }
 
     // 事件订阅集合
@@ -67,6 +72,7 @@ export default class JEventEmitter extends EventEmiter {
         let emmiter = this.emitters.get(key);
         if(!emmiter) {
             emmiter = new JEventEmitter();
+            emmiter.key = key;
             this.emitters.set(key, emmiter);
         }
         return emmiter;

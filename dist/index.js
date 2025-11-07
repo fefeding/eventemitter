@@ -6,6 +6,10 @@ import EventEmiter from 'eventemitter3';
  */
 export default class JEventEmitter extends EventEmiter {
     /**
+     * 唯一标识
+     */
+    key = '';
+    /**
      * 私有方法，用于规范化事件名
      * @param name - 可以是字符串、符号或字符串数组
      * @returns 返回符号或字符串数组
@@ -53,6 +57,8 @@ export default class JEventEmitter extends EventEmiter {
      */
     destory() {
         this.removeAllListeners();
+        if (this.key)
+            JEventEmitter.removeEmitter(this.key);
     }
     // 事件订阅集合
     static emitters = new Map();
@@ -61,6 +67,7 @@ export default class JEventEmitter extends EventEmiter {
         let emmiter = this.emitters.get(key);
         if (!emmiter) {
             emmiter = new JEventEmitter();
+            emmiter.key = key;
             this.emitters.set(key, emmiter);
         }
         return emmiter;

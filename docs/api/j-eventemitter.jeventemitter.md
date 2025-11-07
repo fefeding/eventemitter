@@ -15,8 +15,49 @@ export default class JEventEmitter extends EventEmiter
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [off(event, fn, context, once)](./j-eventemitter.jeventemitter.off.md) |  | 移除给定的事件的一个监听器 |
-|  [on(event, fn, context)](./j-eventemitter.jeventemitter.on.md) |  | 为给定的事件添加一个监听器 |
+`<table>``<thead>``<tr>``<th>`
+
+Method
+
+
+</th>`<th>`
+
+Modifiers
+
+
+</th>`<th>`
+
+Description
+
+
+</th></tr></thead>
+`<tbody>``<tr>``<td>`
+
+[off(event, fn, context, once)](./j-eventemitter.jeventemitter.off.md)
+
+
+</td>`<td>`
+
+
+</td>`<td>`
+
+移除给定的事件的一个监听器
+
+
+</td></tr>
+`<tr>``<td>`
+
+[on(event, fn, context)](./j-eventemitter.jeventemitter.on.md)
+
+
+</td>`<td>`
+
+
+</td>`<td>`
+
+为给定的事件添加一个监听器
+
+
+</td></tr>
+</tbody></table>
 

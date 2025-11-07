@@ -352,6 +352,10 @@ var EventEmitter = /*@__PURE__*/getDefaultExportFromCjs(eventemitter3Exports);
  */
 class JEventEmitter extends EventEmitter {
     /**
+     * 唯一标识
+     */
+    key = '';
+    /**
      * 私有方法，用于规范化事件名
      * @param name - 可以是字符串、符号或字符串数组
      * @returns 返回符号或字符串数组
@@ -399,6 +403,8 @@ class JEventEmitter extends EventEmitter {
      */
     destory() {
         this.removeAllListeners();
+        if (this.key)
+            JEventEmitter.removeEmitter(this.key);
     }
     // 事件订阅集合
     static emitters = new Map();
@@ -407,6 +413,7 @@ class JEventEmitter extends EventEmitter {
         let emmiter = this.emitters.get(key);
         if (!emmiter) {
             emmiter = new JEventEmitter();
+            emmiter.key = key;
             this.emitters.set(key, emmiter);
         }
         return emmiter;
