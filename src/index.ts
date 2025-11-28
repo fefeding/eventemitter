@@ -81,8 +81,8 @@ export default class JEventEmitter extends EventEmiter {
     // 释放
     static removeEmitter(key: string) {
         if(this.emitters.has(key)) {
-            const emitter = this.getEmitter(key);
-            emitter && emitter.destory();
+            //const emitter = this.getEmitter(key);
+            //emitter && emitter.destory();
             return this.emitters.delete(key);
         }
         return false;
